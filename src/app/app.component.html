@@ -1,43 +1,47 @@
+<nav>
+    <h1>
+        <a [routerLink]="['/']" class="brand">BE SRONG</a>
+    </h1>
+    <ul>
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item">
+            <a [routerLink]="['/']" class="nav-link" data-text="Home">Home</a>
+        </li>
+        <li routerLinkActive="active" class="nav-item">
+            <a routerLink="/program-page" class="nav-link" data-text="Program">Program</a>
+        </li>
+        <li routerLinkActive="active" class="nav-item">
+            <a routerLink="/trainers-page" class="nav-link" data-text="Trainers">Trainers</a>
+        </li>
+        <li routerLinkActive="active" class="nav-item">
+            <a routerLink="/news-page" class="nav-link" data-text="News">News</a>
+        </li>
+        <li routerLinkActive="active" class="nav-item">
+            <a [routerLink]="['/about-page']" class="nav-link" data-text="About">About</a>
+        </li>
+        <li routerLinkActive="active" class="nav-item">
+            <a [routerLink]="['/contact-page']" class="nav-link" data-text="Contact">Contact</a>
+        </li>
 
-    <nav>
-        <h1>
-            <a [routerLink]="['/']" class="brand">BE SRONG</a>
-        </h1>
-        <ul>
-            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item">
-                <a [routerLink]="['/']" class="nav-link" data-text="Home">Home</a>
-            </li>
-            <li routerLinkActive="active" class="nav-item">
-              <a routerLink="/program-page" class="nav-link" data-text="Program">Program</a>
-            </li>
-            <li routerLinkActive="active" class="nav-item">
-              <a routerLink="/trainers-page" class="nav-link" data-text="Trainers">Trainers</a>
-            </li>
-            <li routerLinkActive="active" class="nav-item">
-              <a routerLink="/news-page" class="nav-link" data-text="News">News</a>
-            </li>
-            <li routerLinkActive="active" class="nav-item">
-              <a [routerLink]="['/about-page']" class="nav-link" data-text="About">About</a>
-            </li>
-            <li routerLinkActive="active" class="nav-item">
-              <a [routerLink]="['/contact-page']" class="nav-link" data-text="Contact">Contact</a>
-            </li>
-
-            <li>
-                <button class="btn">Login</button>
-            </li>
-            <li>
-                <button class="btn">Logout</button>
-            </li>
-        </ul>
-    </nav>
-
-<div class="container">
-<!--    <div class="card">-->
-<!--        <router-outlet></router-outlet>-->
-<!--    </div>-->
-    <router-outlet></router-outlet>
+        <li>
+            <button class="btn">Login</button>
+        </li>
+        <li>
+            <button class="btn">Logout</button>
+        </li>
+    </ul>
+</nav>
+<div id="page-wrap">
+    <div class="container">
+        <!--    <div class="card">-->
+        <!--        <router-outlet></router-outlet>-->
+        <!--    </div>-->
+        <router-outlet></router-outlet>
+    </div>
 </div>
+<footer>
+</footer>
+
+
 
 
 
