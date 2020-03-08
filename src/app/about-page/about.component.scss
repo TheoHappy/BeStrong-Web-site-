@@ -1,5 +1,6 @@
 section
 {
+  font-size: 15px;
   position: relative;
   width: 100%;
   height: 80vh;
@@ -17,8 +18,8 @@ section:before
   left: 0;
   width: 100%;
   height: 100%;
-  //background: linear-gradient(45deg,#ff0081,#6827b0);
-  background: linear-gradient(45deg,#56ab2f,#a8e063);
+  background-color: #89d4cf;
+  background-image: linear-gradient(315deg, #89d4cf 0%, #6e45e1 74%);
 
   border-radius: 0 0 50% 50% / 0 0 100% 100%;
   transform: scaleX(1.5);

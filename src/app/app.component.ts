@@ -28,14 +28,6 @@ export class AppComponent implements OnInit {
       const element = document.getElementById('navbar');
       element.classList.remove('sticky');
     }
-
-    // if (window.pageYOffset > 550) {
-    //   const element = document.getElementById('navbar');
-    //   element.classList.add('sticky');
-    // } else {
-    //   const element = document.getElementById('navbar');
-    //   element.classList.remove('sticky');
-    // }
   }
 }
 

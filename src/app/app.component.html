@@ -1,44 +1,80 @@
 <header class="animated fadeInDown" id="navbar">
-    <nav>
-        <h1>
-            <a [routerLink]="['/']" class="brand">BE SRONG</a>
-        </h1>
-        <ul>
-            <li routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" class="nav-item">
-                <a [routerLink]="['/']" class="nav-link" data-text="Home">Home</a>
-            </li>
+<!--    <nav>-->
+<!--        <h1>-->
+<!--            <a [routerLink]="['/']" class="brand">BE SRONG</a>-->
+<!--        </h1>-->
+<!--        <ul>-->
+<!--            <li routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" class="nav-item">-->
+<!--                <a [routerLink]="['/']" class="nav-link" data-text="Home">Home</a>-->
+<!--            </li>-->
 
-            <li routerLinkActive="active-link" class="nav-item">
-                <a routerLink="/program-page" class="nav-link" data-text="Program">Program</a>
-            </li>
+<!--            <li routerLinkActive="active-link" class="nav-item">-->
+<!--                <a routerLink="/program-page" class="nav-link" data-text="Program">Program</a>-->
+<!--            </li>-->
 
-            <li routerLinkActive="active-link" class="nav-item">
-                <a routerLink="/trainers-page" class="nav-link" data-text="Trainers">Trainers</a>
-            </li>
+<!--            <li routerLinkActive="active-link" class="nav-item">-->
+<!--                <a routerLink="/trainers-page" class="nav-link" data-text="Trainers">Trainers</a>-->
+<!--            </li>-->
 
-            <li routerLinkActive="active-link" class="nav-item">
-                <a routerLink="/news-page" class="nav-link" data-text="News">News</a>
-            </li>
+<!--            <li routerLinkActive="active-link" class="nav-item">-->
+<!--                <a routerLink="/news-page" class="nav-link" data-text="News">News</a>-->
+<!--            </li>-->
 
-            <li routerLinkActive="active-link" class="nav-item">
-                <a [routerLink]="['/about-page']" class="nav-link" data-text="About">About</a>
-            </li>
+<!--            <li routerLinkActive="active-link" class="nav-item">-->
+<!--                <a [routerLink]="['/about-page']" class="nav-link" data-text="About">About</a>-->
+<!--            </li>-->
 
-            <li routerLinkActive="active-link" class="nav-item">
-                <a routerLink="/contact-page" class="nav-link" data-text="Contact">Contact</a>
-            </li>
+<!--            <li routerLinkActive="active-link" class="nav-item">-->
+<!--                <a routerLink="/contact-page" class="nav-link" data-text="Contact">Contact</a>-->
+<!--            </li>-->
 
-            <li>
-                <button class="btn">Login</button>
-            </li>
-            <li>
-                <button class="btn">Logout</button>
-            </li>
-        </ul>
+<!--            <li>-->
+<!--                <button class="btn">Login</button>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <button class="btn">Logout</button>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" [routerLink]="['/']">
+                <h1>BE SRONG</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li routerLinkActive="nav-item active" [routerLinkActiveOptions]="{exact: true}" >
+                        <a [routerLink]="['/']" class="nav-link">Home</a>
+                    </li>
+                    <li routerLinkActive="nav-item active">
+                        <a routerLink="/program-page" class="nav-link" >Program</a>
+                    </li>
+                    <li routerLinkActive="nav-item active">
+                        <a routerLink="/trainers-page" class="nav-link" >Trainers</a>
+                    </li>
+                    <li routerLinkActive="nav-item active">
+                        <a routerLink="/news-page" class="nav-link" >News</a>
+                    </li>
+                    <li routerLinkActive="nav-item active">
+                        <a routerLink="/about-page" class="nav-link" >About</a>
+                    </li>
+                    <li routerLinkActive="nav-item active">
+                        <a routerLink="/contact-page" class="nav-link" >Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+
+
+
 </header>
 <div id="page-wrap">
-    <div class="container">
+    <div class="container_body">
         <router-outlet></router-outlet>
     </div>
 </div>
@@ -59,6 +95,8 @@
         </p>
     </div>
 </footer>
+
+
 
 
 
